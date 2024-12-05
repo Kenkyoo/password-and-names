@@ -1,0 +1,61 @@
+:root {
+  --padding-cards : 20px;
+  --bg-color: #0b0e14;
+  --bg-container: #272b33;
+  --text-color: #d0d3d4;
+  --font-color: #e5e7e9;
+  --green-color: #9aedb4;
+  --margin-spaces-checkboxes: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.hero-body p {
+  color: #8c919c;
+}
+
+#userName {
+  color: #d0d3d4;
+  text-transform: capitalize;
+}
+
+#userWord {
+  cursor: text;
+}
+
+.notification {
+  background-color: var(--bg-color);
+}
+
+.card {
+  background-color: var(--bg-container);
+  color: var(--font-color);
+  padding: var(--padding-cards);
+}
+
+.fa-copy {
+  color: var(--green-color);
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.content label {
+  margin-bottom: var(--margin-spaces-checkboxes);
+}
+
+.content input {
+  margin-right: var(--margin-spaces-checkboxes);
+}
+

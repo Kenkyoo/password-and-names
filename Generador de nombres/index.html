@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Nombres Aleatorios</title>
+    <!-- Bulma Framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/98504ea853.js" crossorigin="anonymous"></script>
+    <!-- CSS style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <p class="title">Generador de Nombres</p>
+            <p class="subtitle">Aleatorios</p>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-full-mobile is-one-third-desktop is-half-fullhd mx-auto">
+                    <div class="notification is-primary">
+                        <div class="field">
+                            <div class="control is-flex is-justify-content-space-between is-align-items-center">
+                                <input class="input" type="text" id="randomName" readonly>
+                                <i class="fa-solid fa-copy" id="copy"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <header class="card-header is-flex is-flex-direction-column">
+                                <p>Cantidad de palabras</p>
+                                <input class="input" type="number" min="1" max="30" value="1" id="longWords">
+                            </header>
+                            <div class="card-content">
+                                <div class="content is-flex is-flex-direction-column">
+                                </div>
+                            </div>
+                            <div class="card-footer is-flex is-justify-content-center is-align-items-center mt-4">
+                                <button class="button is-success" id="btnNames">Generar Nombre Aleatorio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+                The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+                website content is licensed
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
